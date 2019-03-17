@@ -17,15 +17,14 @@
             <!-- sidenav -->
             <div class="bg-dark" id="sidebar-wrapper">
                 <div class="sidebar-heading">
-                    <a href="#" class="sidenav-brand">ASdsdf</a>
+                    <a href="main.html" class="sidenav-brand">mimiru</a>
                 </div>
                 <div class="list-group list-group-flush">
-                    <a href="#" class="list-group-item list-group-item-action bg-dark sidenav-item">Dashboard</a>
-                    <a href="#" class="list-group-item list-group-item-action bg-dark sidenav-item">Shortcuts</a>
-                    <a href="#" class="list-group-item list-group-item-action bg-dark sidenav-item">Overview</a>
-                    <a href="#" class="list-group-item list-group-item-action bg-dark sidenav-item">Events</a>
-                    <a href="#" class="list-group-item list-group-item-action bg-dark sidenav-item">Profile</a>
-                    <a href="#" class="list-group-item list-group-item-action bg-dark sidenav-item">Status</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-dark sidenav-item">Список сотрудников</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-dark sidenav-item">Добавить</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-dark sidenav-item">Задания</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-dark sidenav-item">Чат</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-dark sidenav-item">Статистика</a>
                 </div>
             </div>
 
@@ -42,24 +41,17 @@
                             aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-
                     <div class="collapse navbar-collapse" id="mainNavbar">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
-                                <a class="nav-link" id="menu-toggle" href="#">Collapse Menu</a>
+                                <a class="nav-link" id="menu-toggle" href="#">Свернуть меню</a>
                             </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Link1 <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link2</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link3</a>
-                            </li>
+                            <li class="nav-item"> <a class="nav-link" href="news.html">Новости</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="about.html">О нас</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="help.html">Помощь</a> </li>
                         </ul>
                     </div>
-                    <a class="nav-link text-light" href="#">Ivan Ivanovich</a>
+                    <a class="nav-link text-light" href="account.html">Ivan Ivanovich</a>
                 </nav>
 
                 <div class="container-fluid">
@@ -72,12 +64,7 @@
         <script src="js/jquery-3.3.1.slim.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script>
-            $("#menu-toggle").click(function(e) {
-                e.preventDefault();
-                $("#wrapper").toggleClass("toggled");
-            });
-        </script>
+        <script src="js/sidenav.js"></script>
     </body>
 </html>
 
