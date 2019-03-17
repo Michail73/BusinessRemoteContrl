@@ -1,191 +1,163 @@
-<!DOCTYPE html>
-<!-- saved from url=(0052)https://getbootstrap.com/docs/4.3/examples/checkout/ -->
-<html lang="en" class="mdl-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v3.8.5">
-    <title>Checkout example · Bootstrap</title>
+<!doctype html>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/checkout/">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
- <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>Регистрация</title>
 
-    
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/registration.css">
+    </head>
 
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-    <!-- Custom styles for this template -->
-    <link href="css/form-validation.css" rel="stylesheet">
-  </head>
   <body class="bg-light">
-    <div class="container">
-  <div class="py-5 text-center">
-    <img class="d-block mx-auto mb-4" src="res/logo.png" alt="" width="144" height="180">
-    <h2>Форма регистрации</h2>
-    <p class="lead">Пожалуйста, введите данные для регистрации в нашем сервисе. </p>
-  </div>
-
-  <div class="row align-items-center justify-content-center">
-   
-    
-    <div class="col-md-8 order-md-1">
-      <h4 class="mb-3">Ваши данные</h4>
-      <form class="needs-validation" novalidate="">
-        <div class="row">
-          <div class="col-md-6 mb-3">
-            <label for="firstName">Имя</label>
-            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
-            <div class="invalid-feedback">
-              Пожалуйста введите имя
-            </div>
+      <div class="container">
+          <div class="py-5 text-center">
+              <img class="d-block mx-auto mb-4" src="res/logo.png" alt="" width="144" height="180">
+              <h2>Форма регистрации</h2>
+              <p class="lead">Пожалуйста, введите данные для регистрации в нашем сервисе. </p>
           </div>
-          <div class="col-md-6 mb-3">
-            <label for="lastName">Фамилия</label>
-            <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
-            <div class="invalid-feedback">
-              Пожалуйста введите свою фамилию
-            </div>
-          </div>
-        </div>
 
-        <div class="mb-3">
-          <label for="username">Логин</label>
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text">@</span>
-            </div>
-            <input type="text" class="form-control" id="username" placeholder="Логин" required="">
-            <div class="invalid-feedback" style="width: 100%;">
-              Пожалуйста введите логин
-            </div>
-          </div>
-        </div>
-
-        <div class="mb-3">
-          <label for="email">Почта </label>
-          <input type="email" class="form-control" id="email" placeholder="you@example.com">
-          <div class="invalid-feedback">
-            Пожалуйста введите свою почту
-          </div>
-        </div>
-
-        <div class="mb-3">
-          <label for="address">Ваш адрес</label>
-          <input type="text" class="form-control" id="address" placeholder="1234 ул. Пушкина дом Колотушкина" required="">
-          <div class="invalid-feedback">
-             Пожалуйста введите свой адрес
-          </div>
-        </div>
-
-     
-
-        <div class="row">
-          <div class="col-md-5 mb-3">
-            <label for="country">Страна</label>
-            <select class="custom-select d-block w-100" id="country" required="">
-              <option value="">Выберете страну...</option>
-              <option>Россия матушка</option>
-              <option>Украина</option>
-              <option>Беларусь</option>
-              <option>Казахстан</option>
-              <option>Узбекистан</option>
-              <option>Молдова</option>
-            </select>
-            <div class="invalid-feedback">
-              Пожалуйста введите свою страну
-            </div>
-          </div>
-        
-        </div>
+          <div class="row align-items-center justify-content-center">
 
 
-        <h4 class="mb-3">Payment</h4>
+              <div class="col-md-8 order-md-1">
+                  <h4 class="mb-3">Ваши данные</h4>
+                  <form class="needs-validation" novalidate="">
+                      <div class="row">
+                          <div class="col-md-6 mb-3">
+                              <label for="firstName">Имя</label>
+                              <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                              <div class="invalid-feedback">
+                                  Пожалуйста введите имя
+                              </div>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                              <label for="lastName">Фамилия</label>
+                              <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                              <div class="invalid-feedback">
+                                  Пожалуйста введите свою фамилию
+                              </div>
+                          </div>
+                      </div>
 
-        <div class="d-block my-3">
-          <div class="custom-control custom-radio">
-            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
-            <label class="custom-control-label" for="credit">Кредитная карта</label>
-          </div>
-          <div class="custom-control custom-radio">
-            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
-            <label class="custom-control-label" for="debit">Дебетовая карта</label>
-          </div>
-       
-        </div>
-        <div class="row">
-          <div class="col-md-6 mb-3">
-            <label for="cc-name">Имя владельца</label>
-            <input type="text" class="form-control" id="cc-name" placeholder="" required="">
-            <small class="text-muted">Имя и фамилия точно как написано на карте</small>
-            <div class="invalid-feedback">
-              Требуется имя
-            </div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <label for="cc-number">Номер карты</label>
-            <input type="text" class="form-control" id="cc-number" placeholder="" required="">
-            <div class="invalid-feedback">
-              Введите номер
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3 mb-3">
-            <label for="cc-expiration">Срок действия</label>
-            <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
-            <div class="invalid-feedback">
-              Введите срок действия карты
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <label for="cc-cvv">CVV</label>
-            <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
-            <div class="invalid-feedback">
-              Введите CVV
-            </div>
-          </div>
-        </div>
-        <hr class="mb-4">
-        <button class="btn btn-primary btn-lg btn-block" type="submit">Зарегистрироваться</button>
-      </form>
-    </div>
-  </div>
+                      <div class="mb-3">
+                          <label for="username">Логин</label>
+                          <div class="input-group">
+                              <div class="input-group-prepend">
+                                  <span class="input-group-text">@</span>
+                              </div>
+                              <input type="text" class="form-control" id="username" placeholder="Логин" required="">
+                              <div class="invalid-feedback" style="width: 100%;">
+                                  Пожалуйста введите логин
+                              </div>
+                          </div>
+                      </div>
 
-  <footer class="my-5 pt-5 text-muted text-center text-small">
-    <p class="mb-1">© 2019</p>
-    <ul class="list-inline">
-      <li class="list-inline-item"><a href="help.html">FAQ</a></li>
- 
-    </ul>
-  </footer>
-</div>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-                crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-                crossorigin="anonymous"></script>
-        <script src="js/form-validation.js"></script>
+                      <div class="mb-3">
+                          <label for="email">Почта </label>
+                          <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                          <div class="invalid-feedback">
+                              Пожалуйста введите свою почту
+                          </div>
+                      </div>
 
-</body></html>
+                      <div class="mb-3">
+                          <label for="address">Ваш адрес</label>
+                          <input type="text" class="form-control" id="address" placeholder="1234 ул. Пушкина дом Колотушкина" required="">
+                          <div class="invalid-feedback">
+                              Пожалуйста введите свой адрес
+                          </div>
+                      </div>
+
+
+
+                      <div class="row">
+                          <div class="col-md-5 mb-3">
+                              <label for="country">Страна</label>
+                              <select class="custom-select d-block w-100" id="country" required="">
+                                  <option value="">Выберете страну...</option>
+                                  <option>Россия матушка</option>
+                                  <option>Украина</option>
+                                  <option>Беларусь</option>
+                                  <option>Казахстан</option>
+                                  <option>Узбекистан</option>
+                                  <option>Молдова</option>
+                              </select>
+                              <div class="invalid-feedback">
+                                  Пожалуйста введите свою страну
+                              </div>
+                          </div>
+
+                      </div>
+
+
+                      <h4 class="mb-3">Payment</h4>
+
+                      <div class="d-block my-3">
+                          <div class="custom-control custom-radio">
+                              <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+                              <label class="custom-control-label" for="credit">Кредитная карта</label>
+                          </div>
+                          <div class="custom-control custom-radio">
+                              <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                              <label class="custom-control-label" for="debit">Дебетовая карта</label>
+                          </div>
+
+                      </div>
+                      <div class="row">
+                          <div class="col-md-6 mb-3">
+                              <label for="cc-name">Имя владельца</label>
+                              <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                              <small class="text-muted">Имя и фамилия точно как написано на карте</small>
+                              <div class="invalid-feedback">
+                                  Требуется имя
+                              </div>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                              <label for="cc-number">Номер карты</label>
+                              <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                              <div class="invalid-feedback">
+                                  Введите номер
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-3 mb-3">
+                              <label for="cc-expiration">Срок действия</label>
+                              <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+                              <div class="invalid-feedback">
+                                  Введите срок действия карты
+                              </div>
+                          </div>
+                          <div class="col-md-3 mb-3">
+                              <label for="cc-cvv">CVV</label>
+                              <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                              <div class="invalid-feedback">
+                                  Введите CVV
+                              </div>
+                          </div>
+                      </div>
+                      <hr class="mb-4">
+                      <button class="btn btn-primary btn-lg btn-block" type="submit">Зарегистрироваться</button>
+                  </form>
+              </div>
+          </div>
+
+          <footer class="my-5 pt-5 text-muted text-center text-small">
+              <p class="mb-1">© 2019</p>
+              <ul class="list-inline">
+                  <li class="list-inline-item"><a href="help.html">FAQ</a></li>
+
+              </ul>
+          </footer>
+      </div>
+
+      <script src="js/jquery-3.3.1.slim.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/registration.js"></script>
+  </body>
+</html>
+
