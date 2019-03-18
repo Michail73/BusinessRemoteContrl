@@ -7,8 +7,13 @@ $(function()
     })
 
     iterate_users(function(user) {
-        console.log(user)
-        $('#user-list').append('<li>' + user.name + ' &lt;' + user.email + '&gt; ' + user.position + '</li>')
+        $('#user-list').append(
+            '<li>' +
+            user.name +
+            ' @' + user.username +
+            ' &lt;' + user.email + '&gt; ' +
+            user.position +
+            '</li>')
     })
 });
 
