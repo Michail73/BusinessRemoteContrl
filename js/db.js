@@ -8,7 +8,8 @@ var db = new Dexie("mimiru_database")
 db.version(1).stores({
     users: 'name, email, position, username, image_url',
     registered_users: 'firstname, secondname, login, password, email, address, country',
-    loggedin_user: 'one, fullname, email, address, country'
+    loggedin_user: 'one, fullname, email, address, country',
+    tasks: 'name, description, username'
 });
 
 var add_user = function(name, email, position, username, image_url, success_callback)
@@ -61,6 +62,20 @@ var get_loggedin_user = function()
         }).catch(err_callback)
     }
 }
+
+var add_task = function(name, description, username, success_callback)
+{
+    db.tasks.put({
+        name: name,
+        description: description,
+        username: username
+    }).then(success_callback).catch(err_callback);
+};
+
+var iterate_tasks = function(success_callback)
+{
+    db.tasks.each(success_callback).catch(err_callback);
+};
 
 $(function()
 {
