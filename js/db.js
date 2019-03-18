@@ -9,8 +9,6 @@ db.version(1).stores({
     users: 'name, email, position'
 });
 
-db.users.clear();
-
 var add_user = function(name, email, position, success_callback)
 {
     db.users.put({ name: name, email: email, position: position }).then(success_callback).catch(err_callback);

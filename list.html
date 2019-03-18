@@ -9,6 +9,11 @@
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet"href="css/style.css">
+
+        <script src="js/dexie.js"></script>
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/db.js"></script>
+        <script src="js/list.js"></script>
     </head>
 
     <body>
@@ -56,13 +61,14 @@
                 </nav>
 
                 <div class="container mt-5">
-                    <!-- content here -->
                     <h2>Список сотрудников</h2>
+
+                    <p id="is-empty-label"></p>
+                    <ol id="user-list"></ol>
                 </div>
             </div>
         </div>
 
-        <script src="js/jquery-3.3.1.slim.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/sidenav.js"></script>
