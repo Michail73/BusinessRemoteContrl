@@ -21,16 +21,3 @@ var iterate_users = function(success_callback)
     db.users.each(success_callback).catch(err_callback);
 };
 
-$(function()
-{
-    $("form").submit(function(event) {
-        event.preventDefault();
-
-        add_user($('#inputFIO').val(), $('#inputEmail').val(), $('#inputPos').val(), function() {})
-
-        iterate_users(function(user) {
-            console.log(user)
-        })
-    });
-});
-
