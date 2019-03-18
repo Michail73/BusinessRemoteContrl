@@ -3,21 +3,22 @@ var err_callback = function(error)
     alert("Database error: " + error);
 }
 
-var db = new Dexie("mimiru_database");
+var db = new Dexie("mimiru_database")
 
 db.version(1).stores({
-    users: 'name, email, position, username',
+    users: 'name, email, position, username, image_url',
     registered_users: 'firstname, secondname, login, password, email, address, country',
     loggedin_user: 'one, fullname, email, address, country'
 });
 
-var add_user = function(name, email, position, username, success_callback)
+var add_user = function(name, email, position, username, image_url, success_callback)
 {
     db.users.put({
         name: name,
         email: email,
         position: position,
-        username: username
+        username: username,
+        image_url: image_url
     }).then(success_callback).catch(err_callback);
 };
 

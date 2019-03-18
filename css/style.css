@@ -64,3 +64,26 @@ body {
     color: #c2c4e8;
 }
 
+#selectable {
+    list-style-type: none;
+    list-style: none;
+}
+
+#selectable li {
+    display: inline;
+}
+
+#selectable div {
+    float: left;
+}
+
+.style {
+    width: 125px;
+    height: 125px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 8px;
+    border:1px solid #333333;
+}
+
