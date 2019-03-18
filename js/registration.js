@@ -20,7 +20,9 @@
 
 $(function()
 {
-    $("#register-button").on("click", function() {
+    $('form').submit(function(event) {
+        event.preventDefault()
+
         register_user(
             $('#firstName').val(),
             $('#lastName').val(),
@@ -29,7 +31,9 @@ $(function()
             $('#email').val(),
             $('#address').val(),
             $('#country').val(),
-            function() {})
-    });
+            function() {
+                window.location.href = "signin.html"
+            })
+    })
 });
 

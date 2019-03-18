@@ -9,6 +9,11 @@
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/signin.css">
+
+        <script src="js/dexie.js"></script>
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/db.js"></script>
+        <script src="js/signin.js"></script>
     </head>
 
     <body class="text-center">
@@ -24,12 +29,15 @@
                     <input type="checkbox" value="remember-me"> Запомнить меня
                 </label>
             </div>
-            <button class="btn btn-lg btn-primary btn-block" type="submit" href="account.html">Вход</button>
+
+            <a id="signin-button" href="javascript:void(0)" class="btn btn-lg btn-primary btn-block">Вход</a>
+
+            <p class="text-danger mt-3" id="errortext"></p>
+
             <a class="nav-link" href="registration.html">Регистрация <span class="sr-only">(current)</span></a>
             <p class="mt-5 mb-3 text-muted">© 2019</p>
         </form>
 
-        <script src="js/jquery-3.3.1.slim.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
     </body>
