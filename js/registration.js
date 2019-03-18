@@ -32,7 +32,12 @@ $(function()
             $('#address').val(),
             $('#country').val(),
             function() {
-                window.location.href = "signin.html"
+                add_loggedin_user(
+                    $('#firstName').val(),
+                    $('#lastName').val(),
+                    function() {
+                        window.location.href = "signin.html"
+                    })
             })
     })
 });

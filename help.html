@@ -9,6 +9,10 @@
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet"href="css/style.css">
+
+        <script src="js/dexie.js"></script>
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/db.js"></script>
     </head>
 
     <body>
@@ -52,7 +56,7 @@
                             <li class="nav-item"> <a class="nav-link" href="contact.html">Контакты</a> </li>
                         </ul>
                     </div>
-                    <a class="nav-link text-light" href="account.html">Ivan Ivanovich</a>
+                    <a id="loggedin_username" class="nav-link text-light" href="account.html"></a>
                 </nav>
 
                 <div class="container mt-5">
@@ -66,7 +70,6 @@
             </div>
         </div>
 
-        <script src="js/jquery-3.3.1.slim.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/sidenav.js"></script>
