@@ -8,7 +8,7 @@ var db = new Dexie("mimiru_database");
 db.version(1).stores({
     users: 'name, email, position, username',
     registered_users: 'firstname, secondname, login, password, email, address, country',
-    loggedin_user: 'one, fullname'
+    loggedin_user: 'one, fullname, email, address, country'
 });
 
 var add_user = function(name, email, position, username, success_callback)
@@ -39,11 +39,14 @@ var register_user = function(firstname, secondname, login, password, email, addr
     }).then(success_callback).catch(err_callback);
 };
 
-var add_loggedin_user = function(firstname, secondname, success_callback)
+var add_loggedin_user = function(firstname, secondname, email, address, country, success_callback)
 {
     db.loggedin_user.put({
         one: "1",
-        fullname: firstname + ' ' + secondname
+        fullname: firstname + ' ' + secondname,
+        email: email,
+        address: address,
+        country: country
     }).then(success_callback).catch(err_callback)
 }
 

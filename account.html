@@ -13,6 +13,7 @@
         <script src="js/dexie.js"></script>
         <script src="js/jquery-3.3.1.slim.min.js"></script>
         <script src="js/db.js"></script>
+        <script src="js/account.js"></script>
     </head>
 
     <body>
@@ -61,10 +62,32 @@
 
                 <div class="container mt-5">
                     <h1 class="">Личный кабинет</h1>
-                    <p class="lead">Скоро здесь что-то появится</p>
-                    <p class="lead">Смирнов </p>
-                    <p class="lead">Василий </p>
-                    <p class="lead">Иванович </p>
+
+                    <p class="lead">Информация о Вашем аккаунте:</p>
+
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>Полное имя</td>
+                                <td id="info_name"></td>
+                            </tr>
+                            <tr>
+                                <td>Почтовый адрес</td>
+                                <td id="info_email"></td>
+                            </tr>
+                            <tr>
+                                <td>Адрес</td>
+                                <td id="info_address"></td>
+                            </tr>
+                            <tr>
+                                <td>Страна</td>
+                                <td id="info_country"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    </br>
+
                     <p>Пишите на <a href="https://passport.yandex.ru/auth?mode=add-user&retpath=https%3A%2F%2Fmail.yandex.ru%2F%2F%3Fmsid%3D1539621984.82826.139896.562927%26m_pssp%3Ddomik%26addMultiUserFromDropdownButton%3Dtrue%23inbox">vse_voprosi@yandex.ru</a></p>
                     </br>
                     <span class="text-muted">Поддерживаем вас с 2019 года</span>

@@ -35,6 +35,9 @@ $(function()
                 add_loggedin_user(
                     $('#firstName').val(),
                     $('#lastName').val(),
+                    $('#email').val(),
+                    $('#address').val(),
+                    $('#country').val(),
                     function() {
                         window.location.href = "signin.html"
                     })
