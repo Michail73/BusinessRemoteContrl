@@ -9,6 +9,10 @@
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet"href="css/style.css">
+
+        <script src="js/dexie.js"></script>
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/db.js"></script>
     </head>
 
     <body>
@@ -58,7 +62,7 @@
                 <div class="container mt-5">
                     <h2>Добавить сотрудника</h2>
 
-                    <form>
+                    <form id="add-form">
                         <div class="form-group">
                             <label for="inputFIO">ФИО</label>
                             <input type="text" class="form-control" id="inputFIO" placeholder="Введите ФИО">
@@ -71,21 +75,18 @@
                             <label for="inputPos">Должность</label>
                             <input type="text" class="form-control" id="inputPos" placeholder="Введите должность">
                         </div>
+
                         <button type="submit" class="btn btn-primary">Добавить</button>
                     </form>
 
                     <ul id="user-list"></ul>
-
-                    <p><input type="button" id="show-me" value="Show me the winkles!" /></p>
                 </div>
             </div>
         </div>
 
-        <script src="js/jquery-3.3.1.slim.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/sidenav.js"></script>
-        <script src="js/db.js"></script>
     </body>
 </html>
 
