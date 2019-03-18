@@ -9,6 +9,11 @@
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/registration.css">
+
+        <script src="js/dexie.js"></script>
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/db.js"></script>
+        <script src="js/registration.js"></script>
     </head>
 
   <body class="bg-light">
@@ -55,6 +60,11 @@
                       </div>
 
                       <div class="mb-3">
+                          <label for="input_password">Пароль</label>
+                          <input type="password" class="form-control" id="input_password" placeholder="Пароль">
+                      </div>
+
+                      <div class="mb-3">
                           <label for="email">Почта </label>
                           <input type="email" class="form-control" id="email" placeholder="you@example.com">
                           <div class="invalid-feedback">
@@ -88,7 +98,7 @@
                           </div>
                       </div>
 
-                      <h4 class="mb-3">Payment</h4>
+                      <h4 class="mb-3">Платёж</h4>
 
                       <div class="d-block my-3">
                           <div class="custom-control custom-radio">
@@ -135,7 +145,9 @@
                           </div>
                       </div>
                       <hr class="mb-4">
-                      <button class="btn btn-primary btn-lg btn-block" type="submit">Зарегистрироваться</button>
+                      <a id="register-button"
+                         href="signin.html"
+                         class="btn btn-primary btn-lg btn-block">Зарегистрироваться</a>
                   </form>
               </div>
           </div>
@@ -148,10 +160,8 @@
           </footer>
       </div>
 
-      <script src="js/jquery-3.3.1.slim.min.js"></script>
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
-      <script src="js/registration.js"></script>
   </body>
 </html>
 
