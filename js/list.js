@@ -14,6 +14,10 @@ $(function()
             ' &lt;' + user.email + '&gt; ' +
             user.position +
             '</li>')
+
+        $('#user-list').append(
+            '<img class="avatar mb-4 mt-1" src=' + user.image_url + '>' +
+            '</img>')
     })
 });
 
